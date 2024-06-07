@@ -14,10 +14,10 @@ const ReadingList = ({ readingList, onRemove }) => {
               alt={book.title}
             />
             <CardContent>
-              <Typography variant="h5" component="div">
+              <Typography variant="h5" component="div" color="text.secondary">
                 {book.title}
               </Typography>
-              <Typography variant="body2" color="text.secondary">
+              <Typography variant="body2" color="text.primary">
                 {book.author}
               </Typography>
             </CardContent>

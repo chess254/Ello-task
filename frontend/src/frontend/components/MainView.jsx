@@ -67,7 +67,7 @@ const MainView = () => {
         boxSizing: 'border-box',
       }}
     >
-      <Typography variant="h4" gutterBottom>
+      <Typography variant="h3" gutterBottom style={{ color: '#335c6e' }}>
         Book Assignment View
       </Typography>
       <div style={{ width: '100%', maxWidth: '600px' }}>
@@ -78,7 +78,7 @@ const MainView = () => {
           handleSelect={handleAddBook}
         />
       </div>
-      <Typography variant="h5" gutterBottom style={{ marginTop: '20px' }}>
+      <Typography variant="h4" gutterBottom style={{ marginTop: '20px', marginBottom: '40px', color: '#f76434' }}>
         Reading List
       </Typography>
       <ReadingList readingList={readingList} onRemove={handleRemoveBook} />
