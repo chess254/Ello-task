@@ -3,7 +3,7 @@ import { TextField, List, ListItem, ListItemText, ListItemAvatar, Avatar, Paper 
 
 const SearchBar = ({ searchQuery, setSearchQuery, searchResults, handleSelect }) => {
   return (
-    <div style={{ position: 'relative', width: '100%', maxWidth: '600px', margin: '0 auto' }}>
+    <div style={{ position: 'relative', width: '100%' }}>
       <TextField
         label="Search Books"
         variant="outlined"

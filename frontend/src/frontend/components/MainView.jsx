@@ -62,20 +62,22 @@ const MainView = () => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        justifyContent: 'center',
-        height: '100%', // Full height of the viewport
         padding: '20px',
+        minHeight: '100vh', 
+        boxSizing: 'border-box',
       }}
     >
       <Typography variant="h4" gutterBottom>
         Book Assignment View
       </Typography>
-      <SearchBar
-        searchQuery={searchQuery}
-        setSearchQuery={setSearchQuery}
-        searchResults={searchResults.filter((book) => !readingList.some((b) => b.title === book.title))}
-        handleSelect={handleAddBook}
-      />
+      <div style={{ width: '100%', maxWidth: '600px' }}>
+        <SearchBar
+          searchQuery={searchQuery}
+          setSearchQuery={setSearchQuery}
+          searchResults={searchResults.filter((book) => !readingList.some((b) => b.title === book.title))}
+          handleSelect={handleAddBook}
+        />
+      </div>
       <Typography variant="h5" gutterBottom style={{ marginTop: '20px' }}>
         Reading List
       </Typography>

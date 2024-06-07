@@ -3,14 +3,18 @@
 html, body {
   height: 100%;
   margin: 0;
-  font-family: 'Mulish', sans-serif; /* Apply Mulish font */
+  font-family: 'Mulish', sans-serif; 
 }
 
 #root {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; 
   height: 100%;
+  width: 100%;
+  overflow-y: auto; 
+  padding: 20px; 
+  box-sizing: border-box;
 }
 
 

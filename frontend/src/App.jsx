@@ -13,7 +13,7 @@ const theme = createTheme({
       main: '#5acccc', // Primary color
     },
     secondary: {
-      main: '#f76434', // Secondary color
+      main: deepOrange, // Secondary color
     },
   },
 });
